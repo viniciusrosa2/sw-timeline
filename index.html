@@ -13,12 +13,15 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+
 </head>
 
 
 <body>
+    <header class="text-center">
+    <h1>STAR WARS TIMELINE</h1>
+<p>A quick guide to all canon chronology.</p>
+    </header>
     <section id="timeline">
 
         <div class="tl-item">
@@ -103,8 +106,8 @@
             </div>
 
             <div class="tl-content">
-                <h1 class="f3 text--accent ttu">A brave and clever ragtag starship crew stands up against the evil Empire as it tightens its grip on the galaxy and hunts down the last of the Jedi Knights.</h1>
-                <p>The plot is unknown.</p>
+                <h1 class="f3 text--accent ttu">Star Wars: Rebels</h1>
+                <p>A brave and clever ragtag starship crew stands up against the evil Empire as it tightens its grip on the galaxy and hunts down the last of the Jedi Knights.</p>
             </div>
 
         </div>
@@ -236,11 +239,15 @@
         }())
 
     </script>
+
+    <!-- horizontal scroll -->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
     <script>
-        $(function() {
-            $("#timeline").mousewheel(function(event, delta) {
-                this.scrollLeft -= (delta * 30);
-                event.preventDefault();
+        $(document).ready(function() {
+            $('html, body, *').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta * 2);
+                e.preventDefault();
             });
         });
 

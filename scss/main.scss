@@ -1,7 +1,24 @@
+* {
+    transition: 300ms;
+}
+
 body {
     font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.75;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    padding: 20px;
+    & h1 {
+        color: #FCFD01;
+    }
 }
 
 #timeline {
