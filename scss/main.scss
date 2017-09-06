@@ -1,3 +1,6 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+
 * {
     transition: 300ms;
 }
@@ -30,6 +33,10 @@ header {
             width: 23.3333%;
         }
     }
+}
+
+.fa-star {
+  color: #FCFD01;  
 }
 
 .tl-item {
@@ -90,7 +97,7 @@ header {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 35%;
     opacity: 0;
     h1 {
         font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -103,7 +110,7 @@ header {
 
 .tl-year {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
